@@ -1,0 +1,333 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block body %}
+        <main class="container p-3">
+
+            <div class="login-form col-md-8 border mx-auto my-5">
+                <h2 class="text-center my-4">Jobseeker Registration</h2>
+                <form method="post" class="mb-5  mx-4">
+                  <div class="register border  mb-4 p-3">
+                  <h4> Login Information </h4>  
+                    <div class="row my-3">
+                      <div class=" col input-group">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email" >
+                      </div>  
+                      <div class="col input-group">
+                        <input type="email" class="form-control" placeholder="Retype Email Address" >
+                      </div>  
+                    </div>
+                    <div class="row mb-3">
+                      <div class=" col input-group">
+                        <input type="password" class="form-control" placeholder="Password" name="password" >
+                      </div>  
+                      <div class="col input-group">
+                        <input type="password" class="form-control" placeholder="Retype Password" >
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="register border  mb-4 p-3">
+                  <h4> Personal Information </h4>  
+                    <div class="row my-3">
+                      <div class=" col input-group">
+                        <input type="text" class="form-control" placeholder="First Name" name="fname" >
+                      </div>  
+                      <div class="col input-group">
+                        <input type="text" class="form-control" placeholder="Last Name"  name="lname">
+                      </div>  
+                    </div>
+                      
+                    <div class=" input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Contact Number" name="number">
+                    </div>  
+                  </div>
+
+                  <div class="register border  mb-4 p-3">
+                  <h4> Job Preference </h4>  
+                    <div class="row my-3">
+                      <div class=" col-md-6 input-group">
+                        <select class="form-control"  name="category">
+                          <option>Prefer Job Category</option>
+                          <option value="Administrative / Management">
+                    Administrative / Management
+                </option> <option value="Public Relation / Advertising">
+                    Public Relation / Advertising
+                </option> <option value="Aerospace / Aviation">
+                    Aerospace / Aviation
+                </option> <option value="Agriculture + Livestock">
+                    Agriculture + Livestock
+                </option> <option value="Engineering - Architecture">
+                    Engineering - Architecture
+                </option> <option value="Automotive / Automobiles">
+                    Automotive / Automobiles
+                </option> <option value="Communications / Broadcasting">
+                    Communications / Broadcasting
+                </option> <option value="Computer  - Technology/Management">
+                    Computer  - Technology/Management
+                </option> <option value="Computer - Consulting">
+                    Computer - Consulting
+                </option> <option value="Computer - System Programming">
+                    Computer - System Programming
+                </option> <option value="Construction Services">
+                    Construction Services
+                </option> <option value="Contractors">
+                    Contractors
+                </option> <option value="Consulting &amp; Professional Services">
+                    Consulting &amp; Professional Services
+                </option> <option value="Education">
+                    Education
+                </option> <option value="Electronics / Electrical">
+                    Electronics / Electrical
+                </option> <option value="Abroad Employment">
+                    Abroad Employment
+                </option> <option value="Entertainment">
+                    Entertainment
+                </option> <option value="Engineer">
+                    Engineer
+                </option> <option value="Tender">
+                    Tender
+                </option> <option value="General Help">
+                    General Help
+                </option> <option value="Graphic Design">
+                    Graphic Design
+                </option> <option value="Public Health">
+                    Public Health
+                </option> <option value="Hotel / Resort Business">
+                    Hotel / Resort Business
+                </option> <option value="Human Resources">
+                    Human Resources
+                </option> <option value="Interior Design">
+                    Interior Design
+                </option> <option value="Insurance">
+                    Insurance
+                </option> <option value="Media / Journalism">
+                    Media / Journalism
+                </option> <option value="Legal">
+                    Legal
+                </option> <option value="Manufacturing">
+                    Manufacturing
+                </option> <option value="Mechanical">
+                    Mechanical
+                </option> <option value="Literature">
+                    Literature
+                </option> <option value="Mining">
+                    Mining
+                </option> <option value="Product Management">
+                    Product Management
+                </option> <option value="Pharmaceuticals">
+                    Pharmaceuticals
+                </option> <option value="Photography">
+                    Photography
+                </option> <option value="Inventory Management">
+                    Inventory Management
+                </option> <option value="Real Estate">
+                    Real Estate
+                </option> <option value="Sales">
+                    Sales
+                </option> <option value="Security">
+                    Security
+                </option> <option value="Technical">
+                    Technical
+                </option> <option value="Engineering - Telecommunication">
+                    Engineering - Telecommunication
+                </option> <option value="Therapists">
+                    Therapists
+                </option> <option value="Tourism Industry">
+                    Tourism Industry
+                </option> <option value="Caregiver">
+                    Caregiver
+                </option> <option value="Transportation">
+                    Transportation
+                </option> <option value="Travel &amp; Ticketing">
+                    Travel &amp; Ticketing
+                </option> <option value="Other / Misc.">
+                    Other / Misc.
+                </option> <option value="Information Technology">
+                    Information Technology
+                </option> <option value="Online jobs">
+                    Online jobs
+                </option> <option value="Accounting and Finance">
+                    Accounting and Finance
+                </option> <option value="Front Office / Secretarial">
+                    Front Office / Secretarial
+                </option> <option value="Biotechnology">
+                    Biotechnology
+                </option> <option value="Civil Service &amp; Governance">
+                    Civil Service &amp; Governance
+                </option> <option value="Database Programming">
+                    Database Programming
+                </option> <option value="Web Designing &amp; Programming">
+                    Web Designing &amp; Programming
+                </option> <option value="Translation + Interpretation">
+                    Translation + Interpretation
+                </option> <option value="Customer Service">
+                    Customer Service
+                </option> <option value="Data &amp; Info Service">
+                    Data &amp; Info Service
+                </option> <option value="Educational Training">
+                    Educational Training
+                </option> <option value="Engineering - Chemical">
+                    Engineering - Chemical
+                </option> <option value="Engineering - Civil">
+                    Engineering - Civil
+                </option> <option value="Engineering - Computer">
+                    Engineering - Computer
+                </option> <option value="Engineering - Electrical">
+                    Engineering - Electrical
+                </option> <option value="Engineering - Electronics">
+                    Engineering - Electronics
+                </option> <option value="Engineering - Communication">
+                    Engineering - Communication
+                </option> <option value="Engineering - General">
+                    Engineering - General
+                </option> <option value="Engineering - Hardware">
+                    Engineering - Hardware
+                </option> <option value="Engineering - Environment">
+                    Engineering - Environment
+                </option> <option value="Engineering - Mechanical">
+                    Engineering - Mechanical
+                </option> <option value="Engineering - Network">
+                    Engineering - Network
+                </option> <option value="Engineering - Software">
+                    Engineering - Software
+                </option> <option value="Engineering - Energy">
+                    Engineering - Energy
+                </option> <option value="Marketing">
+                    Marketing
+                </option> <option value="Health &amp; Sports">
+                    Health &amp; Sports
+                </option> <option value="Leadership">
+                    Leadership
+                </option> <option value="Social Science">
+                    Social Science
+                </option> <option value="Development and Project">
+                    Development and Project
+                </option> <option value="Engineering - Industrial">
+                    Engineering - Industrial
+                </option> <option value="Computer - Multimedia Programming">
+                    Computer - Multimedia Programming
+                </option> <option value="Computer - Programming">
+                    Computer - Programming
+                </option> <option value="Computer - Instructor / Teacher">
+                    Computer - Instructor / Teacher
+                </option> <option value="E-Commerce">
+                    E-Commerce
+                </option> <option value="Computer - Hardware / Network">
+                    Computer - Hardware / Network
+                </option> <option value="Operator">
+                    Operator
+                </option> <option value="Web Development">
+                    Web Development
+                </option> <option value="Web Design">
+                    Web Design
+                </option> <option value="Environment and Natural Resource">
+                    Environment and Natural Resource
+                </option> <option value="Engineering - Bio Medical">
+                    Engineering - Bio Medical
+                </option> <option value="Bakery Industry">
+                    Bakery Industry
+                </option> <option value="Food Technology">
+                    Food Technology
+                </option> <option value="Medical / Nursing">
+                    Medical / Nursing
+                </option> <option value="Human Rights">
+                    Human Rights
+                </option> <option value="Banking / Financial">
+                    Banking / Financial
+                </option> <option value="Fashion Industry">
+                    Fashion Industry
+                </option> <option value="Library Science">
+                    Library Science
+                </option> <option value="Web Promotion ">
+                    Web Promotion 
+                </option> <option value="Domestic / Housekeeping">
+                    Domestic / Housekeeping
+                </option> <option value="Research">
+                    Research
+                </option> <option value="Dairy Industry">
+                    Dairy Industry
+                </option> <option value="Energy Sector">
+                    Energy Sector
+                </option> <option value="Cargo / Courier Service">
+                    Cargo / Courier Service
+                </option> <option value="Remittance Business">
+                    Remittance Business
+                </option> <option value="Logistics / Procurement">
+                    Logistics / Procurement
+                </option> <option value="Counseling / PsychoSocial">
+                    Counseling / PsychoSocial
+                </option> <option value="Beauty &amp; Healthcare">
+                    Beauty &amp; Healthcare
+                </option> <option value="Business Development">
+                    Business Development
+                </option> <option value="Employment Training">
+                    Employment Training
+                </option> <option value="Abroad Study">
+                    Abroad Study
+                </option> <option value="Jobs in Nepali">
+                    Jobs in Nepali
+                </option> <option value="Computer - Internet Marketing">
+                    Computer - Internet Marketing
+                </option> <option value="Engineering - Aeronautical">
+                    Engineering - Aeronautical
+                </option> <option value="Event Management">
+                    Event Management
+                </option> <option value="Engineering - Agriculture">
+                    Engineering - Agriculture
+                </option> <option value="Telemarketing">
+                    Telemarketing
+                </option> <option value="Hydropower">
+                    Hydropower
+                </option> <option value="Hospital Management">
+                    Hospital Management
+                </option> <option value="Telecommunication">
+                    Telecommunication
+                </option> <option value="Hospitality Tourism Hotel">
+                    Hospitality Tourism Hotel
+                </option> <option value="Web Designing and Programming">
+                    Web Designing and Programming
+                </option> <option value="Beverage Industry">
+                    Beverage Industry
+                </option> <option value="Development / Administrative">
+                    Development / Administrative
+                </option> <option value="Agriculture Economist">
+                    Agriculture Economist
+                </option> <option value="Agriculture / Horticulture">
+                    Agriculture / Horticulture
+                </option> <option value="Internet Marketing">
+                    Internet Marketing
+                </option> <option value="Finance &amp; Administration">
+                    Finance &amp; Administration
+                </option> <option value="Trainer ">
+                    Trainer 
+                </option> <option value="Mobile App Development">
+                    Mobile App Development
+                </option> <option value="Various">
+                    Various
+                </option> <option value="Geotechnical Engineer">
+                    Geotechnical Engineer
+                </option> <option value="Software Development">
+                    Software Development
+                </option> <option value="Content Writing">
+                    Content Writing
+                </option> <option value="Expression of Interest">
+                    Expression of Interest
+                </option> <option value="Online Media">
+                    Online Media
+                </option> <option value="Government">
+                    Government
+                </option> <option value="Publication">
+                    Publication
+                </option>
+                        </select>
+                      </div>   
+                    </div>
+                  </div>
+                  <div class="text-center">
+                      <button class="btn btn-primary btn-login" name="submit" type="submit"><i class='fas fa-plus'></i> Create account </button>
+                  </div>                    
+                </form>
+            </div>
+
+        </main>
+
+{% endblock %}

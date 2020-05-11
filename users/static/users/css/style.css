@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+a:hover{
+    text-decoration: none;
+}
+.navbar{
+	font-family: 'Lato', sans-serif;
+}
+
+.active{
+		border-bottom: 1px solid #1c56ac;
+}
+
+.dropdown-toggle{
+    cursor: pointer;
+}
+
+.btn-lg{
+	font-weight: 600;
+	margin-left: 1rem;
+}
+
+.home-search{
+		margin:7.5% 0%;
+}
+
+.btn-homesearch, .btn-login{
+	background-color: #1c56ac;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.btn-homesearch:hover, .btn-login:hover{
+	background-color: #092c5d;
+	color: #fff;
+}
+
+.btn-login{
+    width: 10rem;
+}
+
+li a{
+	color: #1c56ac;
+}
+
+li a:hover{
+	color: #092c5d;
+}
+
+.login-form{
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 6px 5px 5px 7px #ccc;
+}
+
+.login-form h2{
+    color: #2164f3;
+    font-size: 2.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register h4{
+    color: #6c757d;
+}
+
+.register{
+    border-radius: 10px;
+}
+
